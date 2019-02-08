@@ -1,11 +1,9 @@
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed:600" rel="stylesheet">
+
+</head>
 <style type="text/css">
-	#header{
-		font-size: 40px;
-		font:"Georgia";
-		text-align: center;
-		color: black;
-		margin-top: 35px;
-	}
+
 	a {
 		text-decoration: none;
 	}
@@ -14,6 +12,7 @@
 		height: 	50px;
 		width: 	400px;
 		display: inline-block;
+		margin-bottom: 100px;
 
 	}
 	#wrap{
@@ -24,6 +23,7 @@
 	display: inline-block;
 	height: 50px;
 	width: 100px;
+	margin-top: 40px;
 }
 	#linkdin{
 		margin-right: 20px;
@@ -37,12 +37,89 @@
 	#facebook{
 		margin-left: 20px;
 	}
+#wrap2{
+	text-align: center;
+	width: 100%;
+}
+#nav{
+	width: 50%;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  display: inline-block;
+  border-top: 2px solid #b4b4b4;
+  border-bottom: 2px solid #b4b4b4;
+  margin-top: -50px;
 
+}
+
+li {
+  float: left;
+  width: 16.6%;
+  white-space: nowrap;
+  font-size: 18px;
+  color: #666;
+font-family: 'Barlow Semi Condensed', sans-serif;
+
+}
+
+li a {
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #F3F3F3;
+  cursor: pointer;
+  
+}
+#slideshow{
+	width: 50%;
+	height: 65%;
+	background-color: white;
+	display: inline-block;
+	margin-top: 20px;
+	background-image: url("https://www.atlantisbahamas.com/media/Things%20To%20Do/Water%20Park/Beaches/Hero/Experiences_Beach.jpg");
+	background-position: center; 
+	background-size: cover;
+	
+}
+#sign{
+	width:400px;
+	margin-bottom: 40px;
+	margin-top: 10px;
+}
 </style>
-<h1 id="header">Douglas Vilaysom</h1>
+<h1 style="text-align: center;">
+	<img id="sign"src="https://i.imgur.com/knrzUZi.png">
+	
+</h1>
+
+<!--navigation bar-->
+<div id="wrap2">
+	<ul id="nav">
+	  	<li><a id="test" class="active" onClick="changeImage('douglas')">Douglas</a></li>
+	  	<li><a onClick="changeImage('education')" >Education</a></li>
+	  	<li><a onClick="changeImage('work')">Work</a></li>
+	  	<li><a onClick="changeImage('activities')">Activities</a></li>
+	  	<li><a onClick="changeImage('volunteer')">Volunteer</a></li>
+	  	<li><a onClick="changeImage('skills')">Skills/Other</a></li>
+	</ul>
+	<br>
+	<div id="slideshow">
+		
+	</div>
+
+</div>
+
 <div id="wrap">
 	<div id="links">
-		<a href="https://www.linkedin.com/">
+		<a href="https://www.linkedin.com/in/douglas-vilaysom-13a07117b/">
 			<div id="linkdin" class="link">
 				<img src="https://media.licdn.com/dms/image/C4D0BAQFlLFOliANaJg/company-logo_200_200/0?e=2159024400&v=beta&t=6XtTMPqhowDtrl8OtsJ89rf0DfEQWrKQf1dvkrWS-lI">
 			</div>
@@ -60,3 +137,37 @@
 
 	</div>
 </div>
+
+
+<!--Objective: to obtain a part time job to save money for college education in engineering.
+	Education:
+	University of Connecticut, Storrs, CT
+	Sophomore, School of Civil Engineering 
+
+	-->
+
+<script type="text/javascript">
+
+	function changeImage(destination){
+		console.log(destination);
+		if (destination == "douglas") {
+			document.getElementById("slideshow").style.backgroundImage = "url('https://www.w3schools.com/w3css/img_lights.jpg')";
+		}else if (destination == "education"){
+			document.getElementById("slideshow").style.backgroundImage = "url('https://updc.uconn.edu/wp-content/uploads/sites/1525/2017/10/Hartford-Campus-at-Night-1280x500.jpg')";
+		}else if (destination == "work"){
+			document.getElementById("slideshow").style.backgroundImage = "url('http://www.tribtown.com/wp-content/uploads/sites/10/2017/03/58dac284acadb.hires_.jpg')";
+		}else if (destination == "activities"){
+			document.getElementById("slideshow").style.backgroundImage = "url('https://www.hindustantimes.com/rf/image_size_960x540/HT/p2/2019/02/05/Pictures/serie-a-juventus-v-parma_87945b66-293b-11e9-b115-35431bcc9744.jpg')";
+		}else if (destination == "volunteer"){
+			document.getElementById("slideshow").style.backgroundImage = "url('http://nonprofitquarterly.org/wp-content/blogs.dir/56/files/2017/08/red-cross-x.jpg')";
+		}else if (destination == "skills"){
+			document.getElementById("slideshow").style.backgroundImage = "url('https://pmcvariety.files.wordpress.com/2018/07/bradybunchhouse_sc11.jpg?w=1000&h=563&crop=1')";
+		}
+
+		
+		
+
+	}
+
+
+</script>
