@@ -1,16 +1,57 @@
+<h1 id="tired">
+	Douglas Vilaysom
+</h1 >
+<h2 id="tired2">UCONN Civil Engineering</h2>
 <head>
-	<link href="https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed:600" rel="stylesheet">
-
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+	<title>Douglas Vilaysom</title>
 </head>
+<div id="logo">
+	<img src="https://i.imgur.com/ssVG7PK.jpg" alt="Girl in a jacket"  width="6%" class="center">
+</div>
+
 <style type="text/css">
 
+
+@media only screen and (max-width: 600px) {
+
+}
+
+html{
+	/*background-image: url("images/background2.png");*/
+	/*background-repeat: repeat;*/
+}
 	a {
 		text-decoration: none;
+	}
+	.center	{
+		display: block;
+		margin-left: auto;
+  		margin-right: auto;
+	}
+	#logo{
+		display: block;
+		margin-left: auto;
+  		margin-right: auto;
+  		margin-bottom: 10px;
+  		margin-top: -10px;
+	}
+	#tired2{
+		text-align: center;
+		font-family: 'Libre Baskerville', serif;;
+		margin-top: -10px;
+		font-size: 34px;
+	}
+	#tired{
+		text-align: center;
+		margin-top: 20px;
+		font-family: 'Libre Baskerville', serif;;
+		font-size: 42px;
 	}
 	#links{
 		margin-top:-10px;
 		height: 	50px;
-		width: 	400px;
+		width: 	300px;
 		display: inline-block;
 		margin-bottom: 100px;
 
@@ -22,7 +63,7 @@
 .link{
 	display: inline-block;
 	height: 50px;
-	width: 100px;
+	width: 45px;
 	margin-top: 40px;
 }
 	#linkdin{
@@ -42,9 +83,9 @@
 	width: 100%;
 }
 #nav{
-	width: 50%;
+	width: 60%;
 }
-ul {
+#nav {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -52,67 +93,104 @@ ul {
   display: inline-block;
   border-top: 2px solid #b4b4b4;
   border-bottom: 2px solid #b4b4b4;
-  margin-top: -50px;
+  margin-top: -20px;
 
 }
 
-li {
+.navlink {
   float: left;
-  width: 16.6%;
+  width: 20%;
   white-space: nowrap;
   font-size: 18px;
   color: #666;
-font-family: 'Barlow Semi Condensed', sans-serif;
-
+  font-family: 'Barlow Semi Condensed', sans-serif;
 }
 
-li a {
+.navlink a {
+  font-family: 'Barlow Semi Condensed', sans-serif;
   display: block;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
 }
 
-li a:hover {
+.navlink a:hover {
   background-color: #F3F3F3;
   cursor: pointer;
   
 }
 #slideshow{
-	width: 50%;
-	height: 65%;
+	width: 60%;
+	height: 72%;
 	background-color: white;
 	display: inline-block;
 	margin-top: 20px;
-	background-image: url("https://www.atlantisbahamas.com/media/Things%20To%20Do/Water%20Park/Beaches/Hero/Experiences_Beach.jpg");
+	background-image: url("https://i.imgur.com/Ov4Sco3.jpg");
 	background-position: center; 
 	background-size: cover;
 	
 }
 #sign{
-	width:400px;
-	margin-bottom: 40px;
-	margin-top: 10px;
+	width:250px;
+	margin-bottom: 10px;
+	margin-top: 0px;
 }
+#textArea {
+	display: inline-block;
+	margin-top: 100px;
+	height: 70%;
+	width: 60%;
+
+}
+ 
+.bullet{
+	margin-right: 5px;
+	color: white;
+	line-height: 30px;
+	font-size: 20px;
+
+}
+.slideHeader{
+	margin-right: 5px;
+	color: white;
+	line-height: 30px;
+	font-size: 28px;
+
+}
+
 </style>
-<h1 style="text-align: center;">
-	<img id="sign"src="https://i.imgur.com/knrzUZi.png">
+<!-- <h1 style="text-align: center;">
+	<img id="sign"src="https://i.imgur.com/XxRbUXK.png">
 	
-</h1>
+</h1> -->
+	 
+
+
+<br>
 
 <!--navigation bar-->
 <div id="wrap2">
 	<ul id="nav">
-	  	<li><a id="test" class="active" onClick="changeImage('douglas')">Douglas</a></li>
-	  	<li><a onClick="changeImage('education')" >Education</a></li>
-	  	<li><a onClick="changeImage('work')">Work</a></li>
-	  	<li><a onClick="changeImage('activities')">Activities</a></li>
-	  	<li><a onClick="changeImage('volunteer')">Volunteer</a></li>
-	  	<li><a onClick="changeImage('skills')">Skills/Other</a></li>
+	  	<li class='navlink'><a id="test" class="active" onClick="changeImage('douglas')">Douglas</a></li>
+	  	<li class='navlink'><a onClick="changeImage('education')" >Education</a></li>
+	  	<li class='navlink'><a onClick="changeImage('work')">Work</a></li>
+	  	<li class='navlink'><a onClick="changeImage('activities')">Activities</a></li>
+<!-- 	  	<li class='navlink'><a onClick="changeImage('volunteer')">Volunteer</a></li> -->
+	  	<li class='navlink'><a onClick="changeImage('skills')">Skills/Other</a></li>
 	</ul>
 	<br>
 	<div id="slideshow">
-		
+		<div id='textArea'>
+			<h2 class='slideHeader'>Hi I'm Doug Vilaysom</h2>
+			<!-- <ul id='bullets'> -->
+				<li class="bullet">19 year old from East Windsor, CT</li>
+				<li class="bullet">Civil Engineering at UConn</li>
+				<li class="bullet">BopBoop Multiples words</li>
+				<li class="bullet">TEST copy and paste them to here you know what i mean</li>
+				
+				<!-- <li><h4>Test</h4></li> -->
+			<!-- </ul> -->
+		</div>
 	</div>
 
 </div>
@@ -121,17 +199,17 @@ li a:hover {
 	<div id="links">
 		<a href="https://www.linkedin.com/in/douglas-vilaysom-13a07117b/">
 			<div id="linkdin" class="link">
-				<img src="https://media.licdn.com/dms/image/C4D0BAQFlLFOliANaJg/company-logo_200_200/0?e=2159024400&v=beta&t=6XtTMPqhowDtrl8OtsJ89rf0DfEQWrKQf1dvkrWS-lI">
+				<img src="https://i.imgur.com/dRC5u47.png">
 			</div>
 		</a>
 		<a href="mailto:douglas.vilaysom@uconn.edu">
 			<div id="email" class="link">
-				<img src="http://pngimg.com/uploads/email/email_PNG14.png" >
+				<img src="https://icons-for-free.com/free-icons/png/512/1891029.png" >
 			</div>
 		</a>
 		<a href="https://www.facebook.com/douglas.vilaysom">
 			<div id="facebook" class="link">
-				<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Facebook_logo_%28square%29.png/600px-Facebook_logo_%28square%29.png">
+				<img src="https://cdn4.iconfinder.com/data/icons/social-media-icons-the-circle-set/48/facebook_circle-512.png">
 			</div>
 		</a>
 
@@ -139,35 +217,61 @@ li a:hover {
 </div>
 
 
-<!--Objective: to obtain a part time job to save money for college education in engineering.
-	Education:
-	University of Connecticut, Storrs, CT
-	Sophomore, School of Civil Engineering 
 
-	-->
 
 <script type="text/javascript">
 
 	function changeImage(destination){
 		console.log(destination);
 		if (destination == "douglas") {
-			document.getElementById("slideshow").style.backgroundImage = "url('https://www.w3schools.com/w3css/img_lights.jpg')";
+			document.getElementById("slideshow").style.backgroundImage = "url('images/Cover.jpg')";
+			changeText("douglas");
 		}else if (destination == "education"){
-			document.getElementById("slideshow").style.backgroundImage = "url('https://updc.uconn.edu/wp-content/uploads/sites/1525/2017/10/Hartford-Campus-at-Night-1280x500.jpg')";
+			document.getElementById("slideshow").style.backgroundImage = "url('images/education.jpg')";
+			changeText("education");
 		}else if (destination == "work"){
 			document.getElementById("slideshow").style.backgroundImage = "url('http://www.tribtown.com/wp-content/uploads/sites/10/2017/03/58dac284acadb.hires_.jpg')";
+			changeText("work");
 		}else if (destination == "activities"){
-			document.getElementById("slideshow").style.backgroundImage = "url('https://www.hindustantimes.com/rf/image_size_960x540/HT/p2/2019/02/05/Pictures/serie-a-juventus-v-parma_87945b66-293b-11e9-b115-35431bcc9744.jpg')";
+			document.getElementById("slideshow").style.backgroundImage = "url('images/activities.jpg')";
+			changeText("activities");
 		}else if (destination == "volunteer"){
 			document.getElementById("slideshow").style.backgroundImage = "url('http://nonprofitquarterly.org/wp-content/blogs.dir/56/files/2017/08/red-cross-x.jpg')";
+			changeText("volunteer");
 		}else if (destination == "skills"){
 			document.getElementById("slideshow").style.backgroundImage = "url('https://pmcvariety.files.wordpress.com/2018/07/bradybunchhouse_sc11.jpg?w=1000&h=563&crop=1')";
+			changeText("skills");
 		}
+	}
 
-		
-		
+	function changeText(destination) {
+		if (destination == "douglas") {
+			const newHTML = "<h2 class='slideHeader'>Hi I'm Doug Vilaysom</h2><li class='bullet'>19 year old from East Windsor, CT</li> <li class='bullet'>Civil Engineering at UConn</li> <li class='bullet'>BopBoop Multiples words</li> <li class='bullet'>TEST copy and paste them to here you know what i mean</li>"
+			document.getElementById("textArea").innerHTML = newHTML;
+		}else if (destination == "education"){
+			const newHTML = "<h2 class='slideHeader'>Hi I'm Douggfefes ssdsdsddom</h2><li class='bullet'>19 year old from Eastsadasd Windsor, CT</li><li class='bullet'>Civil Engineering at UConn</li><li class='bullet'>BopBoop Multiples words</li><li class='bullet'>TEST copy and paste them to here you know what i mean</li>"
+			document.getElementById("textArea").innerHTML = newHTML;
+		}else if (destination == "work"){
+			const newHTML = "<h2 class='slideHeader'>Hi I'm Douggfefes ssdsdsddom</h2><li class='bullet'>19 year old from  Windsor, CT</li><li class='bullet'>Civil Engineering at UConn</li><li class='bullet'>BopBoop Multiples words</li><li class='bullet'>TEST copy and paste them to here you know what i mean</li>"
+			document.getElementById("textArea").innerHTML = newHTML;
+		}else if (destination == "activities"){
+			const newHTML = "<h2 class='slideHeader'>Hi I'm Douggfefes ssdsdsddom</h2><li class='bullet'>19 year old from East Windsor, CT</li><li class='bullet'>Civil Engineering at UConn</li><li class='bullet'>BopBoop Multiples words</li><li class='bullet'>TEST copy and paste them to here you know what i mean</li>"
+			document.getElementById("textArea").innerHTML = newHTML;
+		}else if (destination == "volunteer"){
+			const newHTML = "<h2 class='slideHeader'>Hi I'm Douggfefes ssdsdsddom</h2><li class='bullet'>19 year old from East Windsor, CT</li><li class='bullet'>Civil Engineering at UConn</li><li class='bullet'>BopBoop Multiples words</li><li class='bullet'>TEST copy and paste them to here you know what i mean</li>"
+			document.getElementById("textArea").innerHTML = newHTML;
+		}else if (destination == "skills"){
+			const newHTML = "<h2 class='slideHeader'>Hi I'm Douggfefes ssdsdsddom</h2><li class='bullet'>19 year old from East Windsor, CT</li><li class='bullet'>Civil Engineering at UConn</li><li class='bullet'>BopBoop Multiples words</li><li class='bullet'>TEST copy and paste them to here you know what i mean</li>"
+			document.getElementById("textArea").innerHTML = newHTML;
 
+		}
 	}
 
 
 </script>
+<!-- 
+			<h2 class='slideHeader'>Hi I'm Doug Vilaysom</h2>
+				<li class='bullet'>19 year old from East Windsor, CT</li>
+				<li class='bullet'>Civil Engineering at UConn</li>
+				<li class='bullet'>BopBoop Multiples words</li>
+				<li class='bullet'>TEST copy and paste them to here you know what i mean</li> -->
