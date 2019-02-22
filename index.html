@@ -39,7 +39,7 @@ html{
 	#tired2{
 		text-align: center;
 		font-family: 'Libre Baskerville', serif;;
-		margin-top: -10px;
+		margin-top: -20px;
 		font-size: 34px;
 	}
 	#tired{
@@ -194,11 +194,8 @@ html{
 			<!-- <ul id='bullets'> -->
 				<li class="bullet">19 year old from East Windsor, CT</li>
 				<li class="bullet">Civil Engineering at UConn</li>
-				<li class="bullet">BopBoop Multiples words</li>
-				<li class="bullet">TEST copy and paste them to here you know what i mean</li>
-				
-				<!-- <li><h4>Test</h4></li> -->
-			<!-- </ul> -->
+				<li class='bullet'>Looking for an interesting and educational internship</li>
+				<li class='bullet'>"I love the process of visualizing, processing and designing projects. I seek the satisfaction and pride of completing the final product."</li>
 		</div>
 	</div>
 
@@ -239,7 +236,7 @@ html{
 			document.getElementById("slideshow").style.backgroundImage = "url('images/education.jpg')";
 			changeText("education");
 		}else if (destination == "work"){
-			document.getElementById("slideshow").style.backgroundImage = "url('http://www.tribtown.com/wp-content/uploads/sites/10/2017/03/58dac284acadb.hires_.jpg')";
+			document.getElementById("slideshow").style.backgroundImage = "url('images/work.jpg";
 			changeText("work");
 		}else if (destination == "activities"){
 			document.getElementById("slideshow").style.backgroundImage = "url('images/activities.jpg')";
@@ -251,32 +248,32 @@ html{
 			document.getElementById("slideshow").style.backgroundImage = "url('images/skills.jpg')";
 			changeText("skills");
 		}else if (destination == "other"){
-			document.getElementById("slideshow").style.backgroundImage = "url('http://nonprofitquarterly.org/wp-content/blogs.dir/56/files/2017/08/red-cross-x.jpg')";
+			document.getElementById("slideshow").style.backgroundImage = "url('images/other.jpg')";
 			changeText("other");
 		}
 	}
 
 	function changeText(destination) {
 		if (destination == "douglas") {
-			const newHTML = "<h2 class='slideHeader'>Hi I'm Doug Vilaysom</h2><li class='bullet'>19 year old from East Windsor, CT</li> <li class='bullet'>Civil Engineering at UConn</li> <li class='bullet'>BopBoop Multiples words</li> <li class='bullet'>TEST copy and paste them to here you know what i mean</li>"
+			const newHTML = "<h2 class='slideHeader'>Hi I'm Doug Vilaysom</h2><li class='bullet'>19 year old from East Windsor, CT</li> <li class='bullet'>Civil Engineering at UConn</li><li class='bullet'>Looking for an interesting and educational internship</li><li class='bullet'>I love the process of visualizing, processing and designing projects. I seek the satisfaction and pride of completing the final product.</li>"
 			document.getElementById("textArea").innerHTML = newHTML;
 		}else if (destination == "education"){
-			const newHTML = "<br><br><li class='bullet'>University of Connecticut Civil Engineering</li><li class='bullet'>Graduating May 2021</li><li class='bullet'>Sophomore</li><br><br><br><li class='bullet'>East Windsor High School</li> <li class='bullet'>Graduated June 2017</li> <li class='bullet'>Honors GPA: 3.6</li>"
+			const newHTML = "<br><br><h2 class='slideHeader'>University of Connecticut Civil Engineering</h2><li class='bullet'>Graduating May 2021</li><li class='bullet'>Sophomore</li><br><br><br><h2 class='slideHeader'>East Windsor High School</h2> <li class='bullet'>Graduated June 2017</li> <li class='bullet'>Honors GPA: 3.6</li>"
 			document.getElementById("textArea").innerHTML = newHTML;
 		}else if (destination == "work"){
-			const newHTML = "<h2 class='slideHeader'>Hi I'm Douggfefes ssdsdsddom</h2><li class='bullet'>19 year old from  Windsor, CT</li><li class='bullet'>Civil Engineering at UConn</li><li class='bullet'>BopBoop Multiples words</li><li class='bullet'>TEST copy and paste them to here you know what i mean</li>"
+			const newHTML = "<h2 class='slideHeader'>East Windsor Summer Custodian</h2><li class='bullet'>Worked summer of 2016 - 2018</li><li class='bullet'>Crew leader</li><h2 class='slideHeader'>UConn Student Union</h2><li class='bullet'>Actively working</li><li class='bullet'>Freshen's Smoothies</li><li class='bullet'>One-Plate Two-Plate cashier</li>"
 			document.getElementById("textArea").innerHTML = newHTML;
 		}else if (destination == "activities"){
-			const newHTML = "<br><br><br><h2 class='slideHeader2'>Habitat for Humanity</h2><li class='bullet'>Attending alternate break volunteer trip</li><li class='bullet'>Fundraised for Windham affiliate build projects</li><h2 class='slideHeader2'>Alpha Phi Omega</h2><li class='bullet'>National Service Fraternity</li><li class='bullet'>Community Service Committee</li><li class='bullet'>Together we develop leadership, promote friendship and provide service to humanity</li><h2 class='slideHeader2'>Formula SAE</h2><li class='bullet'>Hands on engineering experience in fabricating a formula one racecar</li>"
+			const newHTML = "<br><br><br><br><h2 class='slideHeader2'>Habitat for Humanity</h2><li class='bullet'>Attending alternate break volunteer trip</li><li class='bullet'>Fundraised for Windham affiliate build projects</li><h2 class='slideHeader2'>Alpha Phi Omega</h2><li class='bullet'>National Service Fraternity</li><li class='bullet'>Community Service Committee</li><li class='bullet'>Together we develop leadership, promote friendship and provide service to humanity</li><h2 class='slideHeader2'>Formula SAE</h2><li class='bullet'>Hands on engineering experience in fabricating a formula one racecar</li>"
 			document.getElementById("textArea").innerHTML = newHTML;
 		}else if (destination == "volunteer"){
 			// const newHTML = "<h2 class='slideHeader'>Hi I'm Douggfefes ssdsdsddom</h2><li class='bullet'>19 year old from East Windsor, CT</li><li class='bullet'>Civil Engineering at UConn</li><li class='bullet'>BopBoop Multiples words</li><li class='bullet'>TEST copy and paste them to here you know what i mean</li>"
 			// document.getElementById("textArea").innerHTML = newHTML;
 		}else if (destination == "skills"){
-			const newHTML = "<h2 class='slideHeader'>3-D Modelling Software</h2><li class='bullet'>SketchUp (self taught)</li><li class='bullet'>Solid Works (self taught)<h2>Basics</h2><li class='bullet'>Microsoft Word</li><li class='bullet'>Microsoft Excel</li><li class='bullet'>Microsoft PowerPoint</li><li class='bullet'>Photoshop</li>"
+			const newHTML = "<h2 class='slideHeader'>3-D Modelling Software</h2><li class='bullet'>SketchUp (self taught)</li><li class='bullet'>Solid Works (self taught)<h2>Basics</h2><li class='bullet'>Microsoft Word</li><li class='bullet'>Microsoft Excel</li><li class='bullet'>Microsoft PowerPoint</li><li class='bullet'>Photoshop</li><h2 class='slideHeader'>Woodworking</h2>"
 			document.getElementById("textArea").innerHTML = newHTML;
 		}else if (destination == "other"){
-			const newHTML = "<h2 class='slideHeader'>3-D Modelling Software</h2><li class='bullet'>SketchUp (self taught)</li><li class='bullet'>Solid Works (self taught)<h2>Basics</h2><li class='bullet'>Microsoft Word</li><li class='bullet'>Microsoft Excel</li><li class='bullet'>Microsoft PowerPoint</li><li class='bullet'>Photoshop</li>"
+			const newHTML = "<br><br><br><h2 class='slideHeader'>Interests</h2><li class='bullet'>Track and Field (Mid-Distance)</li><li class='bullet'>Pole Vault</li><li class='bullet'>Soccer (Mid-Field)<li class='bullet'>Football</li><li class='bullet'>Fitness</li><li class='bullet'>League of Legends</li>"
 			document.getElementById("textArea").innerHTML = newHTML;
 
 		}
