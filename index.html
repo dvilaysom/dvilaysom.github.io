@@ -121,7 +121,7 @@ html{
 }
 #slideshow{
 	width: 68%;
-	height: 78%;
+	height: 82%;
 	background-color: white;
 	display: inline-block;
 	margin-top: 20px;
@@ -192,7 +192,8 @@ html{
 		<div id='textArea'>
 			<h2 class='slideHeader'>Hi I'm Doug Vilaysom</h2>
 			<!-- <ul id='bullets'> -->
-				<li class="bullet">19 years old. From East Windsor, CT</li>
+				<li class="bullet">19 years old</li>
+				<li class="bullet">From East Windsor, CT</li>
 				<li class="bullet">Civil Engineering Major at UConn</li>
 				<li class='bullet'>"I love the process of visualizing, designing and executing projects. I seek the satisfaction and pride of completing the final product."</li>
 		</div>
@@ -254,7 +255,7 @@ html{
 
 	function changeText(destination) {
 		if (destination == "douglas") {
-			const newHTML = "<h2 class='slideHeader'>Hi I'm Doug Vilaysom</h2><li class='bullet'>19 years old. From East Windsor, CT</li> <li class='bullet'>Civil Engineering Major at UConn</li><li class='bullet'>I love the process of visualizing, designing and executing projects. I seek the satisfaction and pride of completing the final product.</li>"
+			const newHTML = "<h2 class='slideHeader'>Hi I'm Doug Vilaysom</h2><li class='bullet'>19 years old</li> <li class='bullet'>From East Windsor, CT</li><li class='bullet'>Civil Engineering Major at UConn</li><li class='bullet'>I love the process of visualizing, designing and executing projects. I seek the satisfaction and pride of completing the final product.</li>"
 			document.getElementById("textArea").innerHTML = newHTML;
 		}else if (destination == "education"){
 			const newHTML = "<br><h2 class='slideHeader'>University of Connecticut Civil Engineering</h2><li class='bullet'>Graduating May 2021</li><li class='bullet'>Sophomore</li><br><br><br><h2 class='slideHeader'>East Windsor High School</h2> <li class='bullet'>Graduated June 2017</li> <li class='bullet'>Honors GPA: 3.6</li>"
