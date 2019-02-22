@@ -40,7 +40,7 @@ html{
 		text-align: center;
 		font-family: 'Libre Baskerville', serif;;
 		margin-top: -20px;
-		font-size: 34px;
+		font-size: 26px;
 	}
 	#tired{
 		text-align: center;
@@ -192,10 +192,9 @@ html{
 		<div id='textArea'>
 			<h2 class='slideHeader'>Hi I'm Doug Vilaysom</h2>
 			<!-- <ul id='bullets'> -->
-				<li class="bullet">19 year old from East Windsor, CT</li>
-				<li class="bullet">Civil Engineering at UConn</li>
-				<li class='bullet'>Looking for an interesting and educational internship</li>
-				<li class='bullet'>"I love the process of visualizing, processing and designing projects. I seek the satisfaction and pride of completing the final product."</li>
+				<li class="bullet">19 years old. From East Windsor, CT</li>
+				<li class="bullet">Civil Engineering Major at UConn</li>
+				<li class='bullet'>"I love the process of visualizing, designing and executing projects. I seek the satisfaction and pride of completing the final product."</li>
 		</div>
 	</div>
 
@@ -255,16 +254,16 @@ html{
 
 	function changeText(destination) {
 		if (destination == "douglas") {
-			const newHTML = "<h2 class='slideHeader'>Hi I'm Doug Vilaysom</h2><li class='bullet'>19 year old from East Windsor, CT</li> <li class='bullet'>Civil Engineering at UConn</li><li class='bullet'>Looking for an interesting and educational internship</li><li class='bullet'>I love the process of visualizing, processing and designing projects. I seek the satisfaction and pride of completing the final product.</li>"
+			const newHTML = "<h2 class='slideHeader'>Hi I'm Doug Vilaysom</h2><li class='bullet'>19 years old. From East Windsor, CT</li> <li class='bullet'>Civil Engineering Major at UConn</li><li class='bullet'>I love the process of visualizing, designing and executing projects. I seek the satisfaction and pride of completing the final product.</li>"
 			document.getElementById("textArea").innerHTML = newHTML;
 		}else if (destination == "education"){
-			const newHTML = "<br><br><h2 class='slideHeader'>University of Connecticut Civil Engineering</h2><li class='bullet'>Graduating May 2021</li><li class='bullet'>Sophomore</li><br><br><br><h2 class='slideHeader'>East Windsor High School</h2> <li class='bullet'>Graduated June 2017</li> <li class='bullet'>Honors GPA: 3.6</li>"
+			const newHTML = "<br><h2 class='slideHeader'>University of Connecticut Civil Engineering</h2><li class='bullet'>Graduating May 2021</li><li class='bullet'>Sophomore</li><br><br><br><h2 class='slideHeader'>East Windsor High School</h2> <li class='bullet'>Graduated June 2017</li> <li class='bullet'>Honors GPA: 3.6</li>"
 			document.getElementById("textArea").innerHTML = newHTML;
 		}else if (destination == "work"){
 			const newHTML = "<h2 class='slideHeader'>East Windsor Summer Custodian</h2><li class='bullet'>Worked summer of 2016 - 2018</li><li class='bullet'>Crew leader</li><h2 class='slideHeader'>UConn Student Union</h2><li class='bullet'>Actively working</li><li class='bullet'>Freshen's Smoothies</li><li class='bullet'>One-Plate Two-Plate cashier</li>"
 			document.getElementById("textArea").innerHTML = newHTML;
 		}else if (destination == "activities"){
-			const newHTML = "<br><br><br><br><h2 class='slideHeader2'>Habitat for Humanity</h2><li class='bullet'>Attending alternate break volunteer trip</li><li class='bullet'>Fundraised for Windham affiliate build projects</li><h2 class='slideHeader2'>Alpha Phi Omega</h2><li class='bullet'>National Service Fraternity</li><li class='bullet'>Community Service Committee</li><li class='bullet'>Together we develop leadership, promote friendship and provide service to humanity</li><h2 class='slideHeader2'>Formula SAE</h2><li class='bullet'>Hands on engineering experience in fabricating a formula one racecar</li>"
+			const newHTML = "<br><br><br><h2 class='slideHeader2'>Habitat for Humanity</h2><li class='bullet'>Attending alternative break volunteer trip</li><li class='bullet'>Fundraised for Windham affiliate build projects</li><h2 class='slideHeader2'>Alpha Phi Omega</h2><li class='bullet'>National Service Fraternity</li><li class='bullet'>Community Service Committee</li><li class='bullet'>Together we develop leadership, promote friendship and provide service to humanity</li><h2 class='slideHeader2'>Formula SAE</h2><li class='bullet'>Hands on engineering experience in fabricating a formula one racecar</li>"
 			document.getElementById("textArea").innerHTML = newHTML;
 		}else if (destination == "volunteer"){
 			// const newHTML = "<h2 class='slideHeader'>Hi I'm Douggfefes ssdsdsddom</h2><li class='bullet'>19 year old from East Windsor, CT</li><li class='bullet'>Civil Engineering at UConn</li><li class='bullet'>BopBoop Multiples words</li><li class='bullet'>TEST copy and paste them to here you know what i mean</li>"
