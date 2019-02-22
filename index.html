@@ -237,15 +237,15 @@ html{
 		}else if (destination == "activities"){
 			document.getElementById("slideshow").style.backgroundImage = "url('images/activities.jpg')";
 			changeText("activities");
-		}else if (destination == "volunteer"){
-			document.getElementById("slideshow").style.backgroundImage = "url('http://nonprofitquarterly.org/wp-content/blogs.dir/56/files/2017/08/red-cross-x.jpg')";
-			changeText("volunteer");
+		// }else if (destination == "volunteer"){
+		// 	document.getElementById("slideshow").style.backgroundImage = "url('http://nonprofitquarterly.org/wp-content/blogs.dir/56/files/2017/08/red-cross-x.jpg')";
+		// 	changeText("volunteer");
 		}else if (destination == "skills"){
 			document.getElementById("slideshow").style.backgroundImage = "url('images/skills.jpg')";
 			changeText("skills");
 		}else if (destination == "other"){
-			document.getElementById("slideshow").style.backgroundImage = "url('images/skills.jpg')";
-			changeText("skills");
+			document.getElementById("slideshow").style.backgroundImage = "url('http://nonprofitquarterly.org/wp-content/blogs.dir/56/files/2017/08/red-cross-x.jpg')";
+			changeText("other");
 		}
 	}
 
@@ -260,12 +260,15 @@ html{
 			const newHTML = "<h2 class='slideHeader'>Hi I'm Douggfefes ssdsdsddom</h2><li class='bullet'>19 year old from  Windsor, CT</li><li class='bullet'>Civil Engineering at UConn</li><li class='bullet'>BopBoop Multiples words</li><li class='bullet'>TEST copy and paste them to here you know what i mean</li>"
 			document.getElementById("textArea").innerHTML = newHTML;
 		}else if (destination == "activities"){
-			const newHTML = "<h2 class='slideHeader'>Hi I'm Douggfefes ssdsdsddom</h2><li class='bullet'>19 year old from East Windsor, CT</li><li class='bullet'>Civil Engineering at UConn</li><li class='bullet'>BopBoop Multiples words</li><li class='bullet'>TEST copy and paste them to here you know what i mean</li>"
+			const newHTML = "<br><br><br><h2 class='slideHeader'>Habitat for Humanity</h2><li class='bullet'>Attending alternate break volunteer trip</li><li class='bullet'>Fundraised for Windham affiliate build projects</li><h2 class='slideHeader'>Alpha Phi Omega</h2><li class='bullet'>National Service Fraternity</li><li class='bullet'>Community Service Committee</li><li class='bullet'>Together we develop leadership, promote friendship and provide service to humanity</li><h2 class='slideHeader'>Formula SAE</h2><li class='bullet'>Hands on engineering experience in fabricating a formula one racecar</li>"
 			document.getElementById("textArea").innerHTML = newHTML;
 		}else if (destination == "volunteer"){
-			const newHTML = "<h2 class='slideHeader'>Hi I'm Douggfefes ssdsdsddom</h2><li class='bullet'>19 year old from East Windsor, CT</li><li class='bullet'>Civil Engineering at UConn</li><li class='bullet'>BopBoop Multiples words</li><li class='bullet'>TEST copy and paste them to here you know what i mean</li>"
-			document.getElementById("textArea").innerHTML = newHTML;
+			// const newHTML = "<h2 class='slideHeader'>Hi I'm Douggfefes ssdsdsddom</h2><li class='bullet'>19 year old from East Windsor, CT</li><li class='bullet'>Civil Engineering at UConn</li><li class='bullet'>BopBoop Multiples words</li><li class='bullet'>TEST copy and paste them to here you know what i mean</li>"
+			// document.getElementById("textArea").innerHTML = newHTML;
 		}else if (destination == "skills"){
+			const newHTML = "<h2 class='slideHeader'>3-D Modelling Software</h2><li class='bullet'>SketchUp (self taught)</li><li class='bullet'>Solid Works (self taught)<h2>Basics</h2><li class='bullet'>Microsoft Word</li><li class='bullet'>Microsoft Excel</li><li class='bullet'>Microsoft PowerPoint</li><li class='bullet'>Photoshop</li>"
+			document.getElementById("textArea").innerHTML = newHTML;
+		}else if (destination == "other"){
 			const newHTML = "<h2 class='slideHeader'>3-D Modelling Software</h2><li class='bullet'>SketchUp (self taught)</li><li class='bullet'>Solid Works (self taught)<h2>Basics</h2><li class='bullet'>Microsoft Word</li><li class='bullet'>Microsoft Excel</li><li class='bullet'>Microsoft PowerPoint</li><li class='bullet'>Photoshop</li>"
 			document.getElementById("textArea").innerHTML = newHTML;
 
